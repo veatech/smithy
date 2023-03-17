@@ -1,0 +1,2 @@
+# put local environment variables here (then use them to compose others in `.envrc`)
+export AWS_PROFILE="aws-example-org-profile"
