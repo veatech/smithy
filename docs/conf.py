@@ -16,6 +16,15 @@ todo_include_todos = False
 smartquotes = False
 nitpicky = True
 
+# -- Options for PDF output -----------------------------------------------
+
+# better Unicode support
+latex_engine = "xelatex"
+latex_elements = {
+    "papersize": "a4paper"
+}
+latex_show_urls = "footnote"
+
 # -- Options for HTML output ----------------------------------------------
 
 html_theme = 'furo'
