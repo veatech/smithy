@@ -1,7 +1,7 @@
-# since Sphinx 4.2.0 is in requirements.txt, it automatically gets overwritten /
-# downgraded when we build. That's an inefficient use of the image layers, so
-# let's just start out with the 4.2.0 image.
-ARG SPHINX_VERSION=4.2.0
+# since Sphinx >=5.0.0 is in requirements.txt, it automatically gets overwritten
+# / downgraded when we build. That's an inefficient use of the image layers, so
+# let's just start out with the 5.3.0 image.
+ARG SPHINX_VERSION=5.3.0
 
 FROM sphinxdoc/sphinx-latexpdf:${SPHINX_VERSION}
 
