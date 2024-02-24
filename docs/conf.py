@@ -21,7 +21,8 @@ nitpicky = True
 # better Unicode support
 latex_engine = "xelatex"
 latex_elements = {
-    "papersize": "a4paper"
+    "papersize": "a4paper",
+    "preamble": "\\setcounter{tocdepth}{2}"
 }
 latex_show_urls = "footnote"
 

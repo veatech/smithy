@@ -21,7 +21,7 @@ html: html2 html1 merge-versions
 # don't treat warnings as errors because the redirects plugin warns it only
 # works with HTML builders.
 pdf2:
-	@$(SPHINXBUILD) -M latexpdf "source-2.0" "build/2.0" $(SPHINXOPTS) $(0)
+	@$(SPHINXBUILD) -M rinoh "source-2.0" "build/2.0" $(SPHINXOPTS) $(0)
 
 pdf: pdf2
 
