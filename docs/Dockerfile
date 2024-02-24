@@ -13,6 +13,15 @@ FROM sphinxdoc/sphinx-latexpdf:${SPHINX_VERSION}
 # LABEL org.opencontainers.image.description = "Base container image for Sphinx"
 
 WORKDIR /docs
+
+# we need git so pip can install rinohtype from the github repo
+RUN apt-get update \
+    && apt-get install --no-install-recommends --yes \
+    git \
+    && apt-get autoremove \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 ADD requirements.txt /docs
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install -r requirements.txt
